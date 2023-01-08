@@ -12,52 +12,56 @@ body {
     padding: 20px;
     border-radius: 25px;
     float: left;
-    /*
-    background-image: -webkit-linear-gradient(left, lightskyblue, dodgerblue);
-    */
+    background-image: -webkit-linear-gradient(bottom, whitesmoke, lightgrey);
 }
 
-.avatar {
+.layout__header_avatar {
     width: 260px;
     height: 260px;
     border-radius: 50%;
     background-image: url("../img/avatar.webp");
     background-size: cover;
     margin: 20px;
+    transition-property: box-shadow, transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
 }
 
-.avatar-info {
+.layout__header_avatar:hover {
+    box-shadow: 0 0 25px lightskyblue;
+    transform: scale(1.01);
+}
+
+.layout__header_info {
     text-align: left;
 }
 
-.avatar-info h1 {
+.layout__header_info h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.avatar-info p {
+.layout__header_info p {
     font-size: large;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.avatar-info ul {
+.layout__header_info ul {
     padding: 0;
     word-spacing: 15px;
 }
 
 .layout__main {
     width: 50%;
-    margin-left: 350px;
+    margin-left: 360px;
     color: black;
     padding: 0;
     border-radius: 25px;
-    /*
-    background-image: -webkit-linear-gradient(left, lightskyblue, dodgerblue);
-    */
+    background-image: -webkit-linear-gradient(bottom, whitesmoke, lightgrey);
 }
 
-.caption {
+.layout__main_caption {
     margin: 10px;
     padding: 0;
     text-align: left;
@@ -65,7 +69,7 @@ body {
     font-size: xxx-large;
 }
 
-.about {
+.layout__main_about {
     margin: 10px;
     padding: 15px;
     text-align: left;
@@ -77,13 +81,10 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-radius: 25px;
-    /*
-    background-image: -webkit-linear-gradient(left, lightskyblue, dodgerblue);
-    */
+    background-image: -webkit-linear-gradient(top, whitesmoke, lightgrey);
 }
 
-.copyright {
+.layout__footer_copyright {
     margin: 10px;
     padding: 10px;
     color: black;
@@ -96,21 +97,20 @@ a:link {
     color: rgb(0, 137, 255);
     margin: 0;
     padding: 0;
-    display: inline-block;
     text-decoration: underline;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
 }
 
 a:visited {
     color: rgb(180, 14, 180);
-    text-decoration: underline;
 }
 
 a:hover {
     color: rgb(244, 18, 36);
-    text-decoration: underline;
 }
 
 a:active {
     color: rgb(244, 18, 36);
-    text-decoration: underline;
 }
