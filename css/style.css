@@ -1,14 +1,20 @@
+html, body, div, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
 body {
     background: whitesmoke;
     color: black;
     font-size: large;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Times New Roman", serif;
 }
 
 .layout__header {
     width: 300px;
-    color: black;
-    margin: 0;
+    margin-left: 10px;
     padding: 20px;
     border-radius: 25px;
     float: left;
@@ -33,18 +39,12 @@ body {
 }
 
 .layout__header_info {
-    text-align: left;
-}
-
-.layout__header_info h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .layout__header_info p {
     font-size: large;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .layout__header_info ul {
@@ -55,7 +55,6 @@ body {
 .layout__main {
     width: 50%;
     margin-left: 360px;
-    color: black;
     padding: 0;
     border-radius: 25px;
     background-image: -webkit-linear-gradient(bottom, whitesmoke, lightgrey);
@@ -87,7 +86,6 @@ body {
 .layout__footer_copyright {
     margin: 10px;
     padding: 10px;
-    color: black;
     text-align: center;
     font-weight: normal;
     font-size: large;
