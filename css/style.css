@@ -4,6 +4,8 @@
     --background-gradient: -webkit-linear-gradient(bottom, whitesmoke, lightgrey);
     --link-color: rgb(244, 18, 36);
     --toggle-bg-color: whitesmoke;
+    --toggle-bg-hover-color: #121212;
+    --toggle-text-color: rgba(255, 255, 255, 0.87);
 }
 
 :root[theme="dark"] {
@@ -11,6 +13,8 @@
     --background: #121212;
     --background-gradient: -webkit-linear-gradient(bottom, #121212, lightslategray);
     --toggle-bg-color: #121212;
+    --toggle-bg-hover-color: whitesmoke;
+    --toggle-text-color: black;
 }
 
 html, body, div, span {
@@ -101,14 +105,24 @@ body {
 
 .layout__footer_toggle_theme {
     position: fixed;
-    width: 150px;
-    height: 48px;
+    width: 130px;
+    height: 42px;
     bottom: 10px;
     left: 15px;
     color: var(--text-color);
     background-color: var(--toggle-bg-color);
     border: none;
     font-size: medium;
+    border-radius: 25px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+.layout__footer_toggle_theme:hover {
+    color: var(--toggle-text-color);
+    background-color: var(--toggle-bg-hover-color);
+    cursor: pointer;
 }
 
 .layout__footer_copyright {
