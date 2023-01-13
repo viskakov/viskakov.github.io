@@ -8,7 +8,7 @@
     --toggle-text-color: rgba(255, 255, 255, 0.87);
 }
 
-:root[theme="dark"] {
+.darkTheme {
     --text-color: rgba(255, 255, 255, 0.87);
     --background: #121212;
     --background-gradient: -webkit-linear-gradient(bottom, #121212, lightslategray);
@@ -105,7 +105,9 @@ body {
 
 .layout__footer_toggle_theme {
     position: fixed;
-    width: 130px;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 42px;
     bottom: 10px;
     left: 15px;
@@ -117,6 +119,10 @@ body {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
+}
+
+#themeIcon {
+    padding-right: 8px;
 }
 
 .layout__footer_toggle_theme:hover {
