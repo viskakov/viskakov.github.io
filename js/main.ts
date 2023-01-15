@@ -10,8 +10,8 @@ function changeTheme() {
 function changeText() {
     const button = document.getElementById("button");
     if (document.body.classList.contains("darkTheme")) {
-        button.textContent = "Светлая тема";
+        button.innerHTML = "<i id=\"themeIcon\" class=\"bi bi-sun-fill\"></i>Светлая тема";
     } else {
-        button.textContent = "Тёмная тема";
+        button.innerHTML = "<i id=\"themeIcon\" class=\"bi bi-moon-fill\"></i>Тёмная тема";
     }
 }

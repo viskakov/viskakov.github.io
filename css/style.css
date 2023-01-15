@@ -47,13 +47,14 @@ body {
     background-image: url("../img/avatar.webp");
     background-size: cover;
     margin: 20px;
-    transition-property: transform;
+    transition-property: transform, filter;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
 
 .layout__header_avatar:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: saturate(150%);
 }
 
 .layout__header_info {
@@ -125,6 +126,10 @@ body {
     padding-right: 8px;
 }
 
+.layout__footer_toggle_theme:active {
+    transform: scale(.95);
+}
+
 .layout__footer_toggle_theme:hover {
     color: var(--toggle-text-color);
     background-color: var(--toggle-bg-hover-color);
@@ -137,6 +142,7 @@ body {
     text-align: center;
     font-weight: normal;
     font-size: large;
+    user-select: none;
 }
 
 a:link {
