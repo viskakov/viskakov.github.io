@@ -20,7 +20,7 @@ if (isDarkTheme === "1") {
 }
 themeButton.addEventListener("click", function () {
     var isDarkTheme = localStorage.getItem("isDarkTheme");
-    if (isDarkTheme === "0") {
+    if (isDarkTheme === null || isDarkTheme === "0") {
         toggleDarkTheme("1");
     }
     else {
