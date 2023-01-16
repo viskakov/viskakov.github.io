@@ -1,20 +1,22 @@
 :root {
-    --text-color: black;
+    --text-color: rgba(0, 0, 0, 0.87);
     --background: whitesmoke;
-    --background-gradient: -webkit-linear-gradient(bottom, whitesmoke, lightgrey);
+    --background-gradient: -webkit-linear-gradient(bottom, whitesmoke, #D2CBC9);
     --link-color: rgb(244, 18, 36);
     --toggle-bg-color: whitesmoke;
     --toggle-bg-hover-color: #121212;
     --toggle-text-color: rgba(255, 255, 255, 0.87);
+    --avatar-filter: none;
 }
 
 .darkTheme {
     --text-color: rgba(255, 255, 255, 0.87);
     --background: #121212;
-    --background-gradient: -webkit-linear-gradient(bottom, #121212, lightslategray);
+    --background-gradient: -webkit-linear-gradient(bottom, #121212, #343434);
     --toggle-bg-color: #121212;
     --toggle-bg-hover-color: whitesmoke;
-    --toggle-text-color: black;
+    --toggle-text-color: rgba(0, 0, 0, 0.87);
+    --avatar-filter: brightness(80%);
 }
 
 html, body, div, span {
@@ -41,6 +43,7 @@ body {
 }
 
 .layout__header_avatar {
+    filter: var(--avatar-filter);
     width: 260px;
     height: 260px;
     border-radius: 50%;
