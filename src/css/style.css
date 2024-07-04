@@ -49,15 +49,16 @@ body {
     border-radius: 50%;
     background-image: url("../img/avatar.webp");
     background-size: cover;
+    background-position: center center;
     margin: 20px;
     transition-property: transform, filter;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
 
 .layout__header_avatar:hover {
     transform: scale(1.05);
-    filter: saturate(150%);
+    filter: saturate(110%);
 }
 
 .layout__header_info {
