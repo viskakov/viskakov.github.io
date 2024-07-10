@@ -167,6 +167,7 @@ a:visited {
 
 a:hover {
     color: var(--link-color);
+    text-decoration-thickness: 2px;
 }
 
 a:active {
