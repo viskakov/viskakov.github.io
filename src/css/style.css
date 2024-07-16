@@ -61,6 +61,13 @@ body {
     filter: saturate(110%);
 }
 
+.layout__header_desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: grey;
+    font-size: xx-small;
+}
+
 .layout__header_info {
     margin-top: 0;
     margin-bottom: 0;
